@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+ int numero = 7;
+ int tentativa;
+
+  printf("Bem vindo ao Jogo de Advinhacao !\n");
+  printf("Tente advinhar o numero secreto de 1-10\n");
+  printf("Digite a sua tentativa:\n");
+  scanf ("%d", &tentativa);
+   if (tentativa == numero){
+     printf("Acertou!\n");
+   }  else {
+    printf("Errado! O numero era: %d\n", numero);
+    printf("Fim de jogo.\n");
+   }
+
+
+
+
+    return 0;
+}
