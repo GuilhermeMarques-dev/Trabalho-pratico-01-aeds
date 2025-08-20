@@ -1,0 +1,52 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+int main(){
+srand(time(NULL));
+
+
+
+int numeroAleatorioAte10 = (rand() % 10) + 1;
+int tentativa01, tentativa02, tentativa03;
+
+ printf("bem vindo ao jogo de advinhacao ! \n");
+ printf("Tente advinhar o numero secreto entre 1-10:\n");
+ printf("Tentativa 01: \n");
+ scanf("%d", &tentativa01);
+  if (tentativa01 == numeroAleatorioAte10){
+     printf("Acertou !");
+   }
+    else{
+        if (tentativa01 > numeroAleatorioAte10){
+        printf("O numero secreto era menor\n");
+       } 
+       else {
+         printf("O numero secreto era maior\n");
+       }
+     printf("Tentativa 2:\n");
+     scanf("%d", &tentativa02);
+       if (tentativa02 == numeroAleatorioAte10){
+         printf("Acertou !");
+       }
+       else if (tentativa02 > numeroAleatorioAte10){
+        printf("O numero secreto era menor\n");
+       } 
+       else {
+         printf("O numero secreto era maior\n");
+       }
+     printf("Tentativa 03:\n");
+     scanf("%d", &tentativa03);
+       if (tentativa03 == numeroAleatorioAte10){
+     printf("Acertou !");
+   }
+   else if (tentativa03 > numeroAleatorioAte10){
+    printf("O numero secreto era menor\n");
+   } 
+   else {
+     printf("O numero secreto era maior\n");
+   }
+    }
+    printf(" Jogo finalizado !  \n O numero secreto era: %d", numeroAleatorioAte10);
+return 0;
+}
+
